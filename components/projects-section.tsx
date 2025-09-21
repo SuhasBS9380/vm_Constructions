@@ -1,11 +1,17 @@
 "use client"
 
-import { Plus, Eye } from "lucide-react"
+import { Plus, Eye, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import QuoteFormModal from "./quote-form-modal"
+import Link from "next/link"
 
-export default function ProjectsSection() {
+interface ProjectsSectionProps {
+  showAll?: boolean
+  showSeeMore?: boolean
+}
+
+export default function ProjectsSection({ showAll = true, showSeeMore = false }: ProjectsSectionProps) {
   const [selectedProject, setSelectedProject] = useState<number | null>(null)
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
 
@@ -54,6 +60,8 @@ export default function ProjectsSection() {
     },
   ]
 
+  const displayedProjects = showAll ? projects : projects.slice(0, 3)
+
   return (
     <section className="py-12 md:py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -62,7 +70,7 @@ export default function ProjectsSection() {
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {projects.map((project, index) => (
+          {displayedProjects.map((project, index) => (
             <div key={index} className="group bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative overflow-hidden">
                 <img
@@ -107,18 +115,32 @@ export default function ProjectsSection() {
           ))}
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-12">
-          <p className="text-lg text-slate-700 mb-6">
-            Interested in our construction services? Let's discuss your project requirements.
-          </p>
-          <Button 
-            onClick={() => setIsQuoteModalOpen(true)}
-            className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 font-semibold"
-          >
-            GET A QUOTE
-          </Button>
-        </div>
+        {/* See More Button - Only show on homepage */}
+        {showSeeMore && (
+          <div className="text-center mt-12">
+            <Link href="/projects">
+              <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 font-semibold inline-flex items-center gap-2 transition-all duration-300 hover:scale-105">
+                SEE MORE PROJECTS
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+        )}
+
+        {/* Call to Action - Only show on full projects page */}
+        {showAll && (
+          <div className="text-center mt-12">
+            <p className="text-lg text-slate-700 mb-6">
+              Interested in our construction services? Let's discuss your project requirements.
+            </p>
+            <Button 
+              onClick={() => setIsQuoteModalOpen(true)}
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 font-semibold"
+            >
+              GET A QUOTE
+            </Button>
+          </div>
+        )}
       </div>
 
       {/* Quote Form Modal */}

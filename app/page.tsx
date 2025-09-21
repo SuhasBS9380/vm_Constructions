@@ -15,7 +15,7 @@ export default function HomePage() {
       <AboutSection />
       <ServicesSection />
       <StatsSection />
-      <ProjectsSection />
+      <ProjectsSection showAll={false} showSeeMore={true} />
       <TeamSection />
       <Footer />
     </div>
