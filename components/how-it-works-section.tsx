@@ -93,22 +93,23 @@ export default function HowItWorksSection() {
         </div>
 
         {/* Steps Navigation */}
-        <div className="mb-16 overflow-x-auto">
-          <div className="flex justify-center min-w-max px-4">
+        <div className="mb-16">
+          {/* Desktop Layout - Full width with connection lines */}
+          <div className="hidden lg:block">
             <div className="relative">
-              {/* Connection Lines - Hidden on small screens */}
-              <div className="absolute top-6 left-6 right-6 h-0.5 bg-gray-300 z-0 hidden sm:block"></div>
+              {/* Connection Lines */}
+              <div className="absolute top-6 left-6 right-6 h-0.5 bg-gray-300 z-0"></div>
               
               {/* Steps */}
-              <div className="flex items-center gap-4 sm:gap-8 md:gap-12 relative z-10">
+              <div className="flex justify-between items-center relative z-10 max-w-4xl mx-auto">
                 {steps.map((step) => (
                   <div 
                     key={step.number} 
-                    className="text-center cursor-pointer transition-all duration-300 hover:scale-105 flex-shrink-0"
+                    className="text-center cursor-pointer transition-all duration-300 hover:scale-105"
                     onClick={() => handleStepClick(step.number)}
                   >
                     {/* Step Number Circle */}
-                    <div className={`w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg transition-all duration-500 ${
+                    <div className={`w-12 h-12 mx-auto mb-3 rounded-full flex items-center justify-center text-white font-bold text-lg transition-all duration-500 ${
                       activeStep === step.number 
                         ? 'bg-slate-900 shadow-lg scale-110' 
                         : step.number < activeStep 
@@ -119,13 +120,13 @@ export default function HowItWorksSection() {
                     </div>
                     
                     {/* Step Content */}
-                    <div className="space-y-1 min-w-[60px] sm:min-w-[80px]">
-                      <h3 className={`font-bold text-xs transition-colors font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif] ${
+                    <div className="space-y-1 min-w-[80px]">
+                      <h3 className={`font-bold text-sm transition-colors font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif] ${
                         activeStep === step.number ? 'text-slate-900' : 'text-gray-600'
                       }`}>
                         {step.title}
                       </h3>
-                      <h4 className={`font-bold text-xs transition-colors font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif] ${
+                      <h4 className={`font-bold text-sm transition-colors font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif] ${
                         activeStep === step.number ? 'text-slate-900' : 'text-gray-600'
                       }`}>
                         {step.subtitle}
@@ -134,6 +135,44 @@ export default function HowItWorksSection() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+
+          {/* Mobile/Tablet Layout - Grid without sliding */}
+          <div className="lg:hidden">
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-2xl mx-auto">
+              {steps.map((step) => (
+                <div 
+                  key={step.number} 
+                  className="text-center cursor-pointer transition-all duration-300 hover:scale-105"
+                  onClick={() => handleStepClick(step.number)}
+                >
+                  {/* Step Number Circle */}
+                  <div className={`w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-2 sm:mb-3 rounded-full flex items-center justify-center text-white font-bold text-sm sm:text-base transition-all duration-500 ${
+                    activeStep === step.number 
+                      ? 'bg-slate-900 shadow-lg scale-110' 
+                      : step.number < activeStep 
+                        ? 'bg-slate-700' 
+                        : 'bg-gray-400'
+                  }`}>
+                    {step.number}
+                  </div>
+                  
+                  {/* Step Content */}
+                  <div className="space-y-1">
+                    <h3 className={`font-bold text-xs sm:text-sm transition-colors font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif] ${
+                      activeStep === step.number ? 'text-slate-900' : 'text-gray-600'
+                    }`}>
+                      {step.title}
+                    </h3>
+                    <h4 className={`font-bold text-xs sm:text-sm transition-colors font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif] ${
+                      activeStep === step.number ? 'text-slate-900' : 'text-gray-600'
+                    }`}>
+                      {step.subtitle}
+                    </h4>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

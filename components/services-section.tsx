@@ -37,9 +37,15 @@ export default function ServicesSection() {
     },
     {
       image: "/modern-white-residential-building-with-geometric-d.jpg",
-      title: "Full Building Construction with Interior",
-      description: "Complete turnkey construction projects from foundation to interior finishing with modern amenities",
-      detailedDescription: "Our turnkey construction service covers everything from site preparation and foundation to complete interior finishing. This includes architectural planning, structural work, electrical and plumbing systems, flooring, painting, modular kitchen installation, and modern interior design. We handle residential buildings, commercial complexes, and institutional projects with modern amenities like elevators, fire safety systems, and smart home features. Our team coordinates all trades including civil, electrical, plumbing, and interior work to deliver ready-to-occupy buildings."
+      title: "Full Residential & Commercial Building Construction",
+      description: "Complete turnkey construction projects for residential and commercial buildings from foundation to interior finishing",
+      detailedDescription: "Our turnkey construction service covers everything from site preparation and foundation to complete interior finishing for both residential and commercial projects. This includes architectural planning, structural work, electrical and plumbing systems, flooring, painting, modular kitchen installation, and modern interior design. We handle residential buildings, commercial complexes, office buildings, retail spaces, and institutional projects with modern amenities like elevators, fire safety systems, and smart building features. Our team coordinates all trades including civil, electrical, plumbing, and interior work to deliver ready-to-occupy buildings."
+    },
+    {
+      image: "/interior.jpeg",
+      title: "Interior Design & Finishing",
+      description: "Professional interior design services with modern aesthetics, space planning, and premium finishing materials",
+      detailedDescription: "Our interior design service provides comprehensive space planning, modern aesthetic design, and premium finishing for residential and commercial spaces. We offer complete interior solutions including modular kitchens, wardrobes, false ceilings, designer lighting, flooring options (marble, tiles, wooden), wall treatments, and furniture selection. Our design team creates functional and beautiful interiors with attention to space optimization, color coordination, and modern trends. We handle everything from concept design to execution, including electrical planning for lighting, smart home integration, and custom furniture manufacturing."
     },
   ]
 

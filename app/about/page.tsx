@@ -1,7 +1,6 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import AboutSection from "@/components/about-section"
-import StatsSection from "@/components/stats-section"
 import TeamSection from "@/components/team-section"
 
 export default function AboutPage() {
@@ -59,8 +58,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <StatsSection />
 
       {/* Company Values */}
       <section className="py-12 md:py-20 px-4 bg-gray-50">

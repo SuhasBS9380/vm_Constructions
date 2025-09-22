@@ -3,10 +3,8 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import QuoteFormModal from "./quote-form-modal"
 
 export default function NewHeroSection() {
-  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
   const [formData, setFormData] = useState({
     fullName: "",
     mobile: "",
@@ -21,17 +19,71 @@ export default function NewHeroSection() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setIsQuoteModalOpen(true)
+    
+    // Create email content
+    const subject = "New Construction Inquiry from Website"
+    const body = `
+New Construction Inquiry Details:
+
+Full Name: ${formData.fullName}
+Mobile Number: +91 ${formData.mobile}
+Location: ${formData.location}
+
+This inquiry was submitted through the V M Constructions website.
+
+Please contact the customer at the provided mobile number for further discussion.
+
+Best regards,
+V M Constructions Website
+    `
+    
+    // Create mailto link
+    const mailtoLink = `mailto:vmconstructions@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    
+    // Open email client
+    window.location.href = mailtoLink
+    
+    // Show success message (optional)
+    alert("Thank you for your inquiry! Your default email client will open to send the details to V M Constructions.")
+    
+    // Reset form
+    setFormData({
+      fullName: "",
+      mobile: "",
+      location: ""
+    })
   }
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-pink-50 via-orange-50 to-yellow-50 py-8 sm:py-12 px-4">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-12 gap-8 items-start min-h-[80vh]">
-          {/* Left - Form */}
-          <div className="lg:col-span-3 order-3 lg:order-1">
+          {/* Left - Text and Image */}
+          <div className="lg:col-span-9 space-y-4 order-1 lg:order-1">
+            {/* Text Above Image */}
+            <div className="text-center">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black text-slate-900 leading-tight font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif] tracking-tight">
+                CONSTRUCT YOUR{" "}
+                <span className="text-orange-500">DREAM HOME</span>
+              </h1>
+            </div>
+
+            {/* Hero Image */}
+            <div className="flex justify-center">
+              <div className="relative max-w-4xl">
+                <img
+                  src="/heropage.png"
+                  alt="Modern residential building showcasing V M Constructions quality"
+                  className="w-full h-auto object-contain max-h-[60vh]"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Right - Form */}
+          <div className="lg:col-span-3 order-2 lg:order-2">
             <div className="bg-white rounded-2xl shadow-2xl p-6 border border-gray-100">
               <div className="space-y-4">
                 <div className="text-center">
@@ -95,36 +147,9 @@ export default function NewHeroSection() {
               </div>
             </div>
           </div>
-
-          {/* Center - Text and Image */}
-          <div className="lg:col-span-9 space-y-4 order-1 lg:order-2">
-            {/* Text Above Image */}
-            <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black text-slate-900 leading-tight font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif] tracking-tight">
-                CONSTRUCT YOUR{" "}
-                <span className="text-orange-500">DREAM HOME</span>
-              </h1>
-            </div>
-
-            {/* Hero Image */}
-            <div className="flex justify-center">
-              <div className="relative max-w-4xl">
-                <img
-                  src="/heropage.png"
-                  alt="Modern residential building showcasing V M Constructions quality"
-                  className="w-full h-auto object-contain max-h-[60vh]"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
-      {/* Quote Form Modal */}
-      <QuoteFormModal 
-        isOpen={isQuoteModalOpen} 
-        onClose={() => setIsQuoteModalOpen(false)} 
-      />
     </section>
   )
 }

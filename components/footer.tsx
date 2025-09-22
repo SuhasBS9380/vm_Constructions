@@ -40,7 +40,7 @@ export default function Footer() {
               </div>
 
               <p className="text-gray-400 leading-relaxed mb-4">
-                Professional construction services across Karnataka since 1994. Specializing in residential, commercial, and infrastructure projects.
+                Professional construction services across Karnataka since 1994. Specializing in residential, commercial, infrastructure projects, and interior design solutions.
               </p>
 
               <div className="text-gray-400 text-sm">
@@ -83,9 +83,8 @@ export default function Footer() {
               <div className="space-y-3 text-gray-400">
                 <div>
                   <p className="text-orange-500 font-semibold text-sm mb-1">Address:</p>
-                  <p className="text-sm leading-relaxed">01, 129, Alkod Gram Panchayat,<br />
-                  Hebbail Kumta Taluk, Kumta,<br />
-                  Uttara Kannada, Karnataka - 581362</p>
+                  <p className="text-sm leading-relaxed">Daddys Garden Electronic City<br />
+                  Bangalore 560100</p>
                 </div>
                 <div>
                   <p className="text-orange-500 font-semibold text-sm mb-1">Phone:</p>
@@ -106,8 +105,8 @@ export default function Footer() {
                 <li>• Building Structure/Framework</li>
                 <li>• Tiling and Masonry</li>
                 <li>• Staircase with Handrails</li>
-                <li>• Full Building Construction</li>
-                <li>• Interior Finishing</li>
+                <li>• Residential & Commercial Construction</li>
+                <li>• Interior Design & Finishing</li>
               </ul>
 
               <div className="mt-6 p-4 bg-slate-800 rounded-lg">

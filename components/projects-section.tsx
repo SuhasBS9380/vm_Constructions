@@ -21,42 +21,42 @@ export default function ProjectsSection({ showAll = true, showSeeMore = false }:
       title: "Modern Residential Complex",
       description: "Contemporary 4-story residential building with modern balconies, glass facade, and premium finishing in Karnataka",
       category: "Residential",
-      year: "2023"
+      year: "2025"
     },
     {
       image: "/bridge-construction-work-in-progress.jpg",
       title: "Bridge Infrastructure Development",
       description: "Major concrete bridge construction project with advanced engineering techniques and safety standards",
       category: "Infrastructure",
-      year: "2023"
+      year: "2025"
     },
     {
-      image: "/residential-building-with-external-staircase.jpg",
-      title: "Multi-Story Residential Building",
-      description: "Elegant residential complex featuring decorative external staircase with ornamental railings and modern architecture",
-      category: "Residential",
-      year: "2022"
+      image: "/civil-structural-planning-blueprints.jpg",
+      title: "Civil Structural Planning Works",
+      description: "Comprehensive structural engineering and planning services including foundation design, load calculations, and architectural blueprints for safe construction",
+      category: "Planning",
+      year: "2025"
     },
     {
       image: "/roof-slab-reinforcement-with-steel-bars.jpg",
       title: "Advanced Slab Reinforcement",
       description: "Professional concrete slab reinforcement using high-grade TMT steel bars with precise engineering calculations",
       category: "Structural",
-      year: "2023"
+      year: "2025"
     },
     {
       image: "/detailed-slab-reinforcement-structural-work.jpg",
       title: "Structural Framework Construction",
       description: "Detailed reinforcement work showcasing our expertise in structural engineering and quality construction methods",
       category: "Structural",
-      year: "2023"
+      year: "2025"
     },
     {
       image: "/bathroom-interior-construction-with-tiling.jpg",
       title: "Premium Bathroom Interior",
       description: "Modern bathroom construction with quality tiling, waterproofing, and contemporary interior finishing work",
       category: "Interior",
-      year: "2023"
+      year: "2025"
     },
   ]
 
