@@ -1,20 +1,22 @@
 import Header from "@/components/header"
-import HeroSection from "@/components/hero-section"
-import AboutSection from "@/components/about-section"
+import NewHeroSection from "@/components/new-hero-section"
+import ComparisonSection from "@/components/comparison-section"
+import CostEstimationSection from "@/components/cost-estimation-section"
+import HowItWorksSection from "@/components/how-it-works-section"
 import ServicesSection from "@/components/services-section"
-import StatsSection from "@/components/stats-section"
-import TeamSection from "@/components/team-section"
 import ProjectsSection from "@/components/projects-section"
+import TeamSection from "@/components/team-section"
 import Footer from "@/components/footer"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
       <Header />
-      <HeroSection />
-      <AboutSection />
+      <NewHeroSection />
+      <ComparisonSection />
+      <CostEstimationSection />
+      <HowItWorksSection />
       <ServicesSection />
-      <StatsSection />
       <ProjectsSection showAll={false} showSeeMore={true} />
       <TeamSection />
       <Footer />
