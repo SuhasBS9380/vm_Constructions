@@ -58,7 +58,8 @@ Date: ${new Date().toLocaleString()}
       `.trim()
 
       // Create mailto link
-      const mailtoLink = `mailto:vmconstructions@gmail.com?subject=Quote Request from ${formData.name}&body=${encodeURIComponent(emailBody)}`
+      const subject = "New Quote Request from V M Constructions Website"
+      const mailtoLink = `mailto:vmconstructions2025@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`
       
       // Open email client
       window.location.href = mailtoLink

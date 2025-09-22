@@ -40,7 +40,7 @@ V M Constructions Website
     `
     
     // Create mailto link
-    const mailtoLink = `mailto:vmconstructions@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    const mailtoLink = `mailto:vmconstructions2025@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     
     // Open email client
     window.location.href = mailtoLink

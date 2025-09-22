@@ -92,7 +92,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-orange-500 font-semibold text-sm mb-1">Email:</p>
-                  <p>vmconstructions@gmail.com</p>
+                  <p>vmconstructions2025@gmail.com</p>
                 </div>
               </div>
             </div>
