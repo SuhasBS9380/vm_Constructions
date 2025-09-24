@@ -30,17 +30,18 @@ export default function Header() {
   return (
     <>
       {/* Main Header */}
-      <header className="bg-slate-900 text-white py-4 px-4 sticky top-0 z-50">
+      <header className="bg-white shadow-lg border-b border-gray-200 py-3 px-4 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="text-orange-500">
-              <Building2 className="w-8 h-8" />
-            </div>
-            <h1 className="text-xl md:text-2xl font-bold text-white">V M Constructions</h1>
+          <div className="flex items-center">
+            <img 
+              src="/logo.png" 
+              alt="V M Constructions Logo" 
+              className="h-12 w-auto md:h-14 object-contain"
+            />
           </div>
 
           <button 
-            className={`lg:hidden text-white relative transition-opacity duration-300 ${
+            className={`lg:hidden text-slate-900 relative transition-opacity duration-300 ${
               isMenuOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
             }`} 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -107,21 +108,21 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            <Link href="/" className="hover:text-orange-500 transition-colors font-medium">
+            <Link href="/" className="text-slate-700 hover:text-orange-500 transition-colors font-medium">
               Home
             </Link>
-            <Link href="/about" className="hover:text-orange-500 transition-colors font-medium">
+            <Link href="/about" className="text-slate-700 hover:text-orange-500 transition-colors font-medium">
               About
             </Link>
-            <Link href="/projects" className="hover:text-orange-500 transition-colors font-medium">
+            <Link href="/projects" className="text-slate-700 hover:text-orange-500 transition-colors font-medium">
               Projects
             </Link>
-            <Link href="/services" className="hover:text-orange-500 transition-colors font-medium">
+            <Link href="/services" className="text-slate-700 hover:text-orange-500 transition-colors font-medium">
               Services
             </Link>
             <button
               onClick={scrollToFooter}
-              className="hover:text-orange-500 transition-colors font-medium bg-transparent border-none cursor-pointer"
+              className="text-slate-700 hover:text-orange-500 transition-colors font-medium bg-transparent border-none cursor-pointer"
             >
               Contact
             </button>

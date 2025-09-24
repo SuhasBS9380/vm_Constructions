@@ -5,7 +5,6 @@ import CostEstimationSection from "@/components/cost-estimation-section"
 import HowItWorksSection from "@/components/how-it-works-section"
 import ServicesSection from "@/components/services-section"
 import ProjectsSection from "@/components/projects-section"
-import TeamSection from "@/components/team-section"
 import Footer from "@/components/footer"
 
 export default function HomePage() {
@@ -18,7 +17,6 @@ export default function HomePage() {
       <HowItWorksSection />
       <ServicesSection />
       <ProjectsSection showAll={false} showSeeMore={true} />
-      <TeamSection />
       <Footer />
     </div>
   )

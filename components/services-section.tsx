@@ -12,40 +12,76 @@ export default function ServicesSection() {
   }
   const services = [
     {
-      image: "/construction-blueprints-and-planning-documents-on-.jpg",
-      title: "Slab Reinforcement and Conduit Laying",
-      description: "Professional concrete slab reinforcement with electrical conduit installation for modern buildings",
-      detailedDescription: "Our slab reinforcement service includes comprehensive concrete strengthening using high-grade steel reinforcement bars (TMT bars) and modern binding techniques. We specialize in electrical conduit laying within concrete slabs, ensuring proper cable management for residential and commercial buildings. Our team uses advanced tools for precise placement of conduits, maintaining structural integrity while providing efficient electrical infrastructure. We follow IS codes and safety standards for all reinforcement work, ensuring long-lasting and durable concrete structures."
+      image: "/Civil Works.png",
+      title: "Civil Works",
+      description: "Comprehensive civil engineering solutions for all types of construction projects with modern techniques and quality materials",
+      detailedDescription: "Our civil works encompass all aspects of construction including site preparation, excavation, foundation work, concrete structures, and infrastructure development. We handle residential, commercial, and industrial projects with expertise in soil analysis, structural design, and construction management. Our team ensures compliance with building codes and safety standards while delivering durable and cost-effective solutions."
     },
     {
-      image: "/construction-site-with-multiple-tower-cranes-at-tw.jpg",
-      title: "Building Structure/Framework",
-      description: "Complete structural framework construction with modern engineering techniques and quality materials",
-      detailedDescription: "We provide complete structural framework construction services including foundation work, column construction, beam installation, and roof framework. Our experienced engineers use modern construction techniques with high-quality materials like steel, concrete, and timber. We handle both RCC (Reinforced Cement Concrete) and steel frame structures, ensuring earthquake resistance and load-bearing capacity as per Indian building codes. Our framework services include detailed structural analysis, quality material sourcing, and professional execution with modern machinery."
+      image: "/Design Projects.png",
+      title: "Design of Residential and Commercial Projects",
+      description: "Professional architectural and engineering design services for residential and commercial buildings",
+      detailedDescription: "We provide comprehensive design services including architectural planning, structural design, MEP (Mechanical, Electrical, Plumbing) design, and 3D visualization. Our design team creates innovative and functional spaces that meet client requirements while ensuring compliance with local building regulations. We use advanced CAD software and BIM technology for precise and detailed project planning."
     },
     {
-      image: "/brick-laying-and-masonry-construction-work.jpg",
-      title: "Tiling and Masonry in Bathroom",
-      description: "Expert bathroom construction with premium tiling, waterproofing, and modern masonry work",
-      detailedDescription: "Our bathroom construction service includes complete waterproofing, premium tile installation, and modern masonry work. We use high-quality ceramic, vitrified, and designer tiles with proper waterproof membranes and sealants. Our masonry work includes wall construction, partition walls, and decorative elements. We ensure proper drainage systems, ventilation, and moisture control. All bathroom projects include modern fixtures installation, plumbing integration, and finishing work with attention to aesthetics and functionality."
+      image: "/Construction Projects.png",
+      title: "Construction of Residential and Commercial Projects",
+      description: "Complete construction services for residential homes, apartments, offices, and commercial complexes",
+      detailedDescription: "Our construction services cover the entire building process from foundation to finishing. We specialize in residential houses, apartment complexes, office buildings, retail spaces, and industrial facilities. Our experienced team ensures quality construction using modern techniques, premium materials, and adherence to project timelines and budgets."
     },
     {
-      image: "/construction-worker-in-workshop-with-tools-and-equ.jpg",
-      title: "Staircase with Handrails",
-      description: "Custom staircase construction with safety handrails, modern design, and durable materials",
-      detailedDescription: "We design and construct custom staircases including straight, curved, and spiral designs using materials like concrete, steel, wood, and marble. Our staircase construction includes proper structural calculations, safety handrail installation, and modern finishing. We provide both indoor and outdoor staircase solutions with anti-slip treatments, proper lighting provisions, and aesthetic designs. All handrails are constructed following safety standards with options in steel, wood, glass, and decorative materials to match your building's architecture."
+      image: "/Maintenance & Renovation.png",
+      title: "Maintenance and Renovation",
+      description: "Professional building maintenance and renovation services to enhance and preserve your property",
+      detailedDescription: "We offer comprehensive maintenance and renovation services including structural repairs, facade restoration, interior upgrades, and system maintenance. Our team handles both preventive maintenance and major renovations, ensuring your property remains in excellent condition while adding value and functionality to existing structures."
     },
     {
-      image: "/modern-white-residential-building-with-geometric-d.jpg",
-      title: "Full Residential & Commercial Building Construction",
-      description: "Complete turnkey construction projects for residential and commercial buildings from foundation to interior finishing",
-      detailedDescription: "Our turnkey construction service covers everything from site preparation and foundation to complete interior finishing for both residential and commercial projects. This includes architectural planning, structural work, electrical and plumbing systems, flooring, painting, modular kitchen installation, and modern interior design. We handle residential buildings, commercial complexes, office buildings, retail spaces, and institutional projects with modern amenities like elevators, fire safety systems, and smart building features. Our team coordinates all trades including civil, electrical, plumbing, and interior work to deliver ready-to-occupy buildings."
+      image: "/Interior Works.png",
+      title: "Interior Works",
+      description: "Complete interior solutions including design, execution, and finishing for residential and commercial spaces",
+      detailedDescription: "Our interior works include space planning, false ceilings, flooring, wall treatments, modular kitchens, wardrobes, lighting design, and furniture installation. We create functional and aesthetically pleasing interiors using quality materials and modern design principles to transform spaces into beautiful and practical environments."
     },
     {
-      image: "/interior.jpeg",
-      title: "Interior Design & Finishing",
-      description: "Professional interior design services with modern aesthetics, space planning, and premium finishing materials",
-      detailedDescription: "Our interior design service provides comprehensive space planning, modern aesthetic design, and premium finishing for residential and commercial spaces. We offer complete interior solutions including modular kitchens, wardrobes, false ceilings, designer lighting, flooring options (marble, tiles, wooden), wall treatments, and furniture selection. Our design team creates functional and beautiful interiors with attention to space optimization, color coordination, and modern trends. We handle everything from concept design to execution, including electrical planning for lighting, smart home integration, and custom furniture manufacturing."
+      image: "/Structural Works.png",
+      title: "Structural Works",
+      description: "Specialized structural engineering and construction services for safe and durable building frameworks",
+      detailedDescription: "We provide structural engineering services including foundation design, RCC work, steel structures, and seismic-resistant construction. Our structural works ensure building safety and longevity through proper load calculations, quality materials, and adherence to structural engineering standards and building codes."
+    },
+    {
+      image: "/Pre-fabricated Buildings.png",
+      title: "Pre-fabricated Buildings",
+      description: "Modern pre-fabricated construction solutions for quick and efficient building assembly",
+      detailedDescription: "Our pre-fabricated building solutions offer fast construction, cost-effectiveness, and quality control. We design and manufacture pre-fab structures for warehouses, offices, residential units, and industrial facilities. These buildings provide excellent durability, energy efficiency, and can be customized to meet specific requirements."
+    },
+    {
+      image: "/MS (Mild Steel) Works.png",
+      title: "MS (Mild Steel) Works",
+      description: "Professional mild steel fabrication and installation services for structural and architectural applications",
+      detailedDescription: "We specialize in mild steel fabrication including structural steelwork, staircases, railings, gates, grills, and architectural metalwork. Our MS works are executed with precision welding, proper finishing, and anti-corrosion treatments to ensure durability and aesthetic appeal in both functional and decorative applications."
+    },
+    {
+      image: "/SS (Stainless Steel) Works.png",
+      title: "SS (Stainless Steel) Works",
+      description: "High-quality stainless steel fabrication for durable and corrosion-resistant installations",
+      detailedDescription: "Our stainless steel works include kitchen equipment, handrails, balustrades, cladding, and decorative elements. We use various grades of stainless steel to provide corrosion resistance, hygiene, and aesthetic appeal. All SS works are executed with precision cutting, welding, and finishing techniques for long-lasting performance."
+    },
+    {
+      image: "/Aluminium Works .png",
+      title: "Aluminium Works",
+      description: "Modern aluminium fabrication services for windows, doors, facades, and architectural elements",
+      detailedDescription: "We provide comprehensive aluminium works including windows, doors, curtain walls, facades, and structural glazing. Our aluminium solutions offer lightweight construction, corrosion resistance, and excellent thermal performance. We use high-quality aluminium profiles and modern fabrication techniques for precise installation and finishing."
+    },
+    {
+      image: "/Waterproofing Works.png",
+      title: "Waterproofing Works",
+      description: "Professional waterproofing solutions to protect buildings from water damage and moisture infiltration",
+      detailedDescription: "We offer comprehensive waterproofing services including roof waterproofing, basement waterproofing, bathroom waterproofing, and external wall treatments. Our solutions use advanced waterproofing membranes, sealants, and protective coatings to ensure long-term protection against water damage and structural deterioration."
+    },
+    {
+      image: "/Waterproofing Works.png",
+      title: "All Types of Waterproofing Solutions",
+      description: "Complete range of waterproofing systems and solutions for various construction applications",
+      detailedDescription: "Our waterproofing solutions cover all types of applications including liquid membranes, sheet membranes, crystalline waterproofing, injection grouting, and protective coatings. We provide customized waterproofing systems for roofs, basements, swimming pools, water tanks, and industrial structures with guaranteed performance and durability."
     },
   ]
 

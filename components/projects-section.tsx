@@ -31,17 +31,17 @@ export default function ProjectsSection({ showAll = true, showSeeMore = false }:
       year: "2025"
     },
     {
-      image: "/civil-structural-planning-blueprints.jpg",
-      title: "Civil Structural Planning Works",
-      description: "Comprehensive structural engineering and planning services including foundation design, load calculations, and architectural blueprints for safe construction",
-      category: "Planning",
-      year: "2025"
-    },
-    {
       image: "/roof-slab-reinforcement-with-steel-bars.jpg",
       title: "Advanced Slab Reinforcement",
       description: "Professional concrete slab reinforcement using high-grade TMT steel bars with precise engineering calculations",
       category: "Structural",
+      year: "2025"
+    },
+    {
+      image: "/Civil Works.png",
+      title: "Civil Structural Planning Works",
+      description: "Comprehensive structural engineering and planning services including foundation design, load calculations, and architectural blueprints for safe construction",
+      category: "Planning",
       year: "2025"
     },
     {
