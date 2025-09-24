@@ -9,7 +9,7 @@ export default function ComparisonSection() {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false)
 
   const vmConstructionsFeatures = [
-    "ESCROW Facility for 100% Money Safety",
+    "100% Money Safety Guarantee",
     "Top Quality Assurance with QMS/QAM",
     "Monitor The Progress From Home using App",
     "ZERO Cost Overruns",
