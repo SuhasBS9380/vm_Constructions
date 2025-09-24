@@ -119,7 +119,6 @@ export default function Footer() {
                 <li>• Maintenance and Renovation</li>
                 <li>• Interior Works</li>
                 <li>• Structural Works</li>
-                <li>• Pre-fabricated Buildings</li>
                 <li>• MS, SS & Aluminium Works</li>
                 <li>• Waterproofing Solutions</li>
               </ul>

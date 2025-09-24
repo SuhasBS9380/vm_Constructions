@@ -48,12 +48,6 @@ export default function ServicesSection() {
       detailedDescription: "We provide structural engineering services including foundation design, RCC work, steel structures, and seismic-resistant construction. Our structural works ensure building safety and longevity through proper load calculations, quality materials, and adherence to structural engineering standards and building codes."
     },
     {
-      image: "/Pre-fabricated Buildings.png",
-      title: "Pre-fabricated Buildings",
-      description: "Modern pre-fabricated construction solutions for quick and efficient building assembly",
-      detailedDescription: "Our pre-fabricated building solutions offer fast construction, cost-effectiveness, and quality control. We design and manufacture pre-fab structures for warehouses, offices, residential units, and industrial facilities. These buildings provide excellent durability, energy efficiency, and can be customized to meet specific requirements."
-    },
-    {
       image: "/MS (Mild Steel) Works.png",
       title: "MS (Mild Steel) Works",
       description: "Professional mild steel fabrication and installation services for structural and architectural applications",
@@ -114,7 +108,7 @@ export default function ServicesSection() {
 
                 {/* Expandable detailed description */}
                 {expandedService === index && (
-                  <div className="mb-4 p-4 bg-gray-50 rounded-lg">
+                  <div className="mb-4 p-4 bg-white rounded-lg border border-slate-200 shadow-sm">
                     <h4 className="font-semibold text-slate-900 mb-2">Detailed Service Information:</h4>
                     <p className="text-slate-700 text-sm leading-relaxed">
                       {service.detailedDescription}
@@ -129,12 +123,12 @@ export default function ServicesSection() {
                   <Button
                     size="sm"
                     onClick={() => toggleService(index)}
-                    className="bg-orange-500 hover:bg-orange-600 text-white w-7 h-7 md:w-8 md:h-8 p-0 rounded-full transition-all duration-200"
+                    className="bg-slate-800 hover:bg-slate-900 text-white w-9 h-9 md:w-10 md:h-10 p-0 rounded-full shadow-lg flex items-center justify-center border-2 border-slate-600 hover:border-orange-500 transition-all duration-200"
                   >
                     {expandedService === index ? (
-                      <Minus className="w-3 h-3 md:w-4 md:h-4" />
+                      <Minus className="w-4 h-4 md:w-5 md:h-5" />
                     ) : (
-                      <Plus className="w-3 h-3 md:w-4 md:h-4" />
+                      <Plus className="w-4 h-4 md:w-5 md:h-5" />
                     )}
                   </Button>
                 </div>
