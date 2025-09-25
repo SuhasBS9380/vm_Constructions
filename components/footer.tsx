@@ -52,7 +52,7 @@ export default function Footer() {
               </div>
 
               <p className="text-gray-400 leading-relaxed mb-4">
-                Professional construction services across Karnataka since 1994. Specializing in residential, commercial, infrastructure projects, and interior design solutions.
+                Professional construction services across Karnataka since 2023. Specializing in residential, commercial, infrastructure projects, and interior design solutions.
               </p>
 
               <div className="text-gray-400 text-sm">
@@ -79,11 +79,6 @@ export default function Footer() {
                 <li>
                   <a href="/projects" className="text-gray-400 hover:text-orange-500 transition-colors">
                     Projects
-                  </a>
-                </li>
-                <li>
-                  <a href="/contact" className="text-gray-400 hover:text-orange-500 transition-colors">
-                    Contact Us
                   </a>
                 </li>
               </ul>
@@ -139,7 +134,7 @@ export default function Footer() {
             </div>
             <div className="text-gray-400 text-xs text-center md:text-right">
               <p>Professional Construction Services</p>
-              <p>Since 1994 | Karnataka, India</p>
+              <p>Since 2023 | Karnataka, India</p>
               {/* Social Media Icons */}
               <div className="flex justify-center md:justify-end gap-4 mt-3">
                 <a 

@@ -11,7 +11,7 @@ export default function AboutSection() {
 
             <div className="space-y-4 md:space-y-6 text-slate-700">
               <p className="text-base md:text-lg font-semibold leading-relaxed">
-                V M Constructions is a leading construction company based in Karnataka, specializing in comprehensive building solutions across Uttarakannada and surrounding districts. With over three decades of excellence since 1994, we have established ourselves as trusted builders in the region.
+                V M Constructions is a leading construction company based in Karnataka, specializing in comprehensive building solutions across Uttarakannada and surrounding districts. With over three decades of excellence since 2023, we have established ourselves as trusted builders in the region.
               </p>
 
               <p className="text-sm md:text-base leading-relaxed">
@@ -36,7 +36,7 @@ export default function AboutSection() {
               className="w-full h-auto rounded-lg"
             />
             <div className="absolute bottom-4 md:bottom-8 left-4 md:left-8 bg-slate-900 text-white p-4 md:p-6 rounded-lg">
-              <div className="text-2xl md:text-4xl font-black text-orange-500">1994</div>
+              <div className="text-2xl md:text-4xl font-black text-orange-500">2023</div>
               <div className="text-xs md:text-sm tracking-wider">SINCE</div>
             </div>
           </div>

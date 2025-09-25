@@ -48,7 +48,7 @@ export default function ServicesPage() {
                 <span className="text-2xl font-bold">30+</span>
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Years Experience</h3>
-              <p className="text-slate-600">Trusted construction services since 1994</p>
+              <p className="text-slate-600">Trusted construction services since 2023</p>
             </div>
 
             <div className="text-center">
