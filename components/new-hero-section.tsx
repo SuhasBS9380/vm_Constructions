@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
@@ -10,6 +10,18 @@ export default function NewHeroSection() {
     mobile: "",
     location: ""
   })
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const heroImages = ["/hero1.png", "/hero2.png"]
+
+  // Auto-slide functionality for hero background
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex(prev => (prev + 1) % heroImages.length)
+    }, 5000) // Change image every 5 seconds
+
+    return () => clearInterval(interval)
+  }, [])
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
@@ -57,29 +69,154 @@ V M Constructions Website
   }
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-pink-50 via-orange-50 to-yellow-50 py-8 sm:py-12 px-4">
-      <div className="max-w-7xl mx-auto w-full">
+    <>
+      {/* Custom animations */}
+      <style jsx>{`
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        @keyframes scale-x {
+          from {
+            transform: scaleX(0);
+          }
+          to {
+            transform: scaleX(1);
+          }
+        }
+        
+        .animate-fade-in-up {
+          animation: fade-in-up 0.8s ease-out forwards;
+        }
+        
+        .animate-scale-x {
+          animation: scale-x 1s ease-out forwards;
+        }
+        
+        .animation-delay-200 {
+          animation-delay: 0.2s;
+        }
+        
+        .animation-delay-300 {
+          animation-delay: 0.3s;
+        }
+        
+        .animation-delay-400 {
+          animation-delay: 0.4s;
+        }
+        
+        .animation-delay-500 {
+          animation-delay: 0.5s;
+        }
+        
+        .animation-delay-600 {
+          animation-delay: 0.6s;
+        }
+        
+        .animation-delay-700 {
+          animation-delay: 0.7s;
+        }
+        
+        .animation-delay-800 {
+          animation-delay: 0.8s;
+        }
+        
+        .animation-delay-1000 {
+          animation-delay: 1s;
+        }
+        
+        .animation-delay-1200 {
+          animation-delay: 1.2s;
+        }
+        
+        .animation-delay-1400 {
+          animation-delay: 1.4s;
+        }
+      `}</style>
+      
+      <section className="relative min-h-screen overflow-hidden py-8 sm:py-12 px-4">
+      {/* Background Images with Sliding Effect */}
+      <div className="absolute inset-0 z-0">
+        {heroImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            <img
+              src={image}
+              alt={`Hero background ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
+            {/* Professional Shadow Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20"></div>
+          </div>
+        ))}
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-12 gap-8 items-start min-h-[80vh]">
           {/* Left - Text and Image */}
           <div className="lg:col-span-9 space-y-4 order-1 lg:order-1">
-            {/* Text Above Image */}
-            <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black text-slate-900 leading-tight font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif] tracking-tight">
-                CONSTRUCT YOUR{" "}
-                <span className="text-orange-500">DREAM HOME</span>
-              </h1>
-            </div>
+            {/* Animated Text Section */}
+            <div className="text-center relative">
+              {/* Animated decorative elements */}
+              <div className="absolute inset-0 pointer-events-none">
+                {/* Animated dots */}
+                <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-orange-400 rounded-full animate-pulse opacity-60"></div>
+                <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-white rounded-full animate-bounce opacity-40 animation-delay-300"></div>
+                <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-orange-300 rounded-full animate-pulse opacity-50 animation-delay-500"></div>
+                <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-white rounded-full animate-bounce opacity-30 animation-delay-700"></div>
+                
+                {/* Animated lines */}
+                <div className="absolute top-1/2 left-0 w-12 h-0.5 bg-gradient-to-r from-transparent via-orange-400 to-transparent animate-pulse opacity-60"></div>
+                <div className="absolute top-1/2 right-0 w-12 h-0.5 bg-gradient-to-r from-transparent via-orange-400 to-transparent animate-pulse opacity-60 animation-delay-300"></div>
+              </div>
 
-            {/* Hero Image */}
-            <div className="flex justify-center">
-              <div className="relative max-w-4xl">
-                <img
-                  src="/heropage.png"
-                  alt="Modern residential building showcasing V M Constructions quality"
-                  className="w-full h-auto object-contain max-h-[60vh]"
-                />
+              {/* Main heading with enhanced styling */}
+              <div className="relative">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white leading-tight font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif] tracking-tight drop-shadow-2xl">
+                  <span className="inline-block animate-fade-in-up">CONSTRUCT</span>{" "}
+                  <span className="inline-block animate-fade-in-up animation-delay-200">YOUR</span>{" "}
+                  <span className="inline-block text-orange-400 animate-fade-in-up animation-delay-400 relative">
+                    DREAM HOME
+                    {/* Underline animation */}
+                    <div className="absolute bottom-0 left-0 w-full h-1 bg-orange-400 transform scale-x-0 animate-scale-x origin-left animation-delay-800"></div>
+                  </span>
+                </h1>
+                
+                {/* Decorative line under main text */}
+                <div className="flex justify-center mt-4">
+                  <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-orange-400 to-transparent animate-pulse"></div>
+                </div>
+              </div>
+
+              {/* Subtitle with animation */}
+              <div className="relative mt-6">
+                <p className="text-lg md:text-xl text-white/90 font-medium drop-shadow-lg animate-fade-in-up animation-delay-600">
+                  <span className="relative">
+                    Professional Construction Services Across Karnataka
+                    {/* Animated dots after text */}
+                    <span className="inline-flex ml-2">
+                      <span className="w-1 h-1 bg-orange-400 rounded-full animate-bounce animation-delay-1000"></span>
+                      <span className="w-1 h-1 bg-orange-400 rounded-full animate-bounce animation-delay-1200 ml-1"></span>
+                      <span className="w-1 h-1 bg-orange-400 rounded-full animate-bounce animation-delay-1400 ml-1"></span>
+                    </span>
+                  </span>
+                </p>
               </div>
             </div>
+
           </div>
 
           {/* Right - Form */}
@@ -151,5 +288,6 @@ V M Constructions Website
       </div>
 
     </section>
+    </>
   )
 }
