@@ -1,10 +1,12 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import ProjectsSection from "@/components/projects-section"
+import AnimatedCursor from "@/components/animated-cursor"
 
 export default function ProjectsPage() {
   return (
     <div className="min-h-screen">
+      <AnimatedCursor />
       <Header />
 
       {/* Projects Hero Section */}

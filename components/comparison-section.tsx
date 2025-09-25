@@ -11,7 +11,7 @@ export default function ComparisonSection() {
   const vmConstructionsFeatures = [
     "100% Money Safety Guarantee",
     "Top Quality Assurance with QMS/QAM",
-    "Monitor The Progress From Home using App",
+    "Monitoring work by multiple senior construction engineers",
     "ZERO Cost Overruns",
     "Guaranteed On Time Delivery"
   ]
