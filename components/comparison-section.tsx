@@ -88,11 +88,6 @@ export default function ComparisonSection() {
             Start Your Construction
           </Button>
 
-          <div className="text-center mt-8">
-            <p className="text-slate-700 font-semibold">Karnataka's Only Company with</p>
-            <p className="text-orange-500 font-bold text-lg">REGISTERED QUALITY ASSESSMENT</p>
-            <p className="text-slate-600">in home construction</p>
-          </div>
         </div>
       </div>
 
