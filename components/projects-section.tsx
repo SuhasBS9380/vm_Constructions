@@ -70,7 +70,7 @@ export default function ProjectsSection({ showAll = true, showSeeMore = false }:
       year: "2023"
     },
     {
-      images: ["/tamara1.jpg", "/tamara2.jpg", "/tamara3.jpg"],
+      images: ["/TAMARA1.jpg", "/TAMARA2.jpg", "/TAMARA3.jpg"],
       title: "Ongoing Barricade Work at Whitefield",
       description: "Professional barricade construction work at Whitefield for Tamara Leisure Experience Pvt Ltd, ensuring safety and quality standards",
       category: "Infrastructure",
