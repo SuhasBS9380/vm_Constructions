@@ -40,7 +40,7 @@ export default function ServicesPage() {
               WHY CHOOSE V M CONSTRUCTIONS?
             </h2>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto">
-              With over 30 years of experience in Karnataka's construction industry, we deliver excellence in every project.
+              With our commitment to quality in Karnataka's construction industry, we deliver excellence in every project.
             </p>
           </div>
 

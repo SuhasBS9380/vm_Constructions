@@ -30,7 +30,7 @@ export default function ProjectsSection({ showAll = true, showSeeMore = false }:
         "/construction9.jpg"
       ],
       title: "Building Home from Scratch",
-      description: "Complete residential construction project from foundation to finishing, showcasing our expertise in modern home building with quality materials and craftsmanship",
+      description: "Complete residential construction project from foundation to finishing, showcasing modern home building with quality materials and craftsmanship",
       category: "Residential",
       year: "2024"
     },

@@ -78,7 +78,7 @@ export default function ComparisonSection() {
         {/* Call to Action */}
         <div className="text-center space-y-6">
           <h3 className="text-2xl font-bold text-slate-900">
-            Experience Tech-Enabled Construction with us
+            Choose Tech-Enabled Construction with us
           </h3>
           
           <Button

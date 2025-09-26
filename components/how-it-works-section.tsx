@@ -19,7 +19,7 @@ export default function HowItWorksSection() {
       number: 2,
       title: "Meet our",
       subtitle: "Expert",
-      description: "Connect with our experienced construction professionals for detailed consultation and project planning.",
+      description: "Connect with our skilled construction professionals for detailed consultation and project planning.",
       image: "/2.png",
       detailedDescription: "Schedule a meeting with our certified construction experts who will visit your site, understand your vision, and provide professional guidance on design, materials, and construction methodology."
     },

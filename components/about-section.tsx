@@ -15,7 +15,7 @@ export default function AboutSection() {
               </p>
 
               <p className="text-sm md:text-base leading-relaxed">
-                Our expertise spans from residential buildings to commercial complexes, with notable projects including IB Building construction in Yellapur taluk and various infrastructure developments across Karnataka. We pride ourselves on delivering quality construction with modern techniques, ensuring every project meets the highest standards of safety, durability, and aesthetic appeal.
+                Our services span from residential buildings to commercial complexes, with notable projects including IB Building construction in Yellapur taluk and various infrastructure developments across Karnataka. We pride ourselves on delivering quality construction with modern techniques, ensuring every project meets the highest standards of safety, durability, and aesthetic appeal.
               </p>
 
               <p className="text-sm md:text-base leading-relaxed">

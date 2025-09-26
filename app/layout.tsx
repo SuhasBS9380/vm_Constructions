@@ -9,7 +9,7 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "V M Constructions - Professional Construction Services",
   description:
-    "V M Constructions offers professional construction, engineering, and building services with over 25 years of experience.",
+    "V M Constructions offers professional construction, engineering, and building services for residential, commercial, and infrastructure projects across Karnataka.",
   generator: "v0.app",
   icons: {
     icon: [

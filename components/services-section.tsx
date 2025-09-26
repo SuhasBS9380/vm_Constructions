@@ -15,7 +15,7 @@ export default function ServicesSection() {
       image: "/Civil Works.png",
       title: "Civil Works",
       description: "Comprehensive civil engineering solutions for all types of construction projects with modern techniques and quality materials",
-      detailedDescription: "Our civil works encompass all aspects of construction including site preparation, excavation, foundation work, concrete structures, and infrastructure development. We handle residential, commercial, and industrial projects with expertise in soil analysis, structural design, and construction management. Our team ensures compliance with building codes and safety standards while delivering durable and cost-effective solutions."
+      detailedDescription: "Our civil works encompass all aspects of construction including site preparation, excavation, foundation work, concrete structures, and infrastructure development. We handle residential, commercial, and industrial projects with skills in soil analysis, structural design, and construction management. Our team ensures compliance with building codes and safety standards while delivering durable and cost-effective solutions."
     },
     {
       image: "/Design Projects.png",
@@ -27,7 +27,7 @@ export default function ServicesSection() {
       image: "/Construction Projects.png",
       title: "Construction of Residential and Commercial Projects",
       description: "Complete construction services for residential homes, apartments, offices, and commercial complexes",
-      detailedDescription: "Our construction services cover the entire building process from foundation to finishing. We specialize in residential houses, apartment complexes, office buildings, retail spaces, and industrial facilities. Our experienced team ensures quality construction using modern techniques, premium materials, and adherence to project timelines and budgets."
+      detailedDescription: "Our construction services cover the entire building process from foundation to finishing. We specialize in residential houses, apartment complexes, office buildings, retail spaces, and industrial facilities. Our skilled team ensures quality construction using modern techniques, premium materials, and adherence to project timelines and budgets."
     },
     {
       image: "/Maintenance & Renovation.png",
