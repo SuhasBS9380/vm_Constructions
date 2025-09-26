@@ -167,7 +167,7 @@ V M Constructions Website
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         <div className="flex flex-col lg:grid lg:grid-cols-12 gap-6 lg:gap-8 items-center lg:items-start min-h-[90vh] lg:min-h-[80vh]">
           {/* Left - Text and Image */}
-          <div className="w-full lg:col-span-9 space-y-4 order-2 lg:order-1 text-center lg:text-left">
+          <div className="w-full lg:col-span-9 space-y-4 order-1 text-center lg:text-left">
             {/* Animated Text Section */}
             <div className="text-center relative">
               {/* Animated decorative elements */}
@@ -220,7 +220,7 @@ V M Constructions Website
           </div>
 
           {/* Right - Form */}
-          <div className="w-full max-w-md mx-auto lg:max-w-none lg:col-span-3 order-1 lg:order-2">
+          <div className="w-full max-w-md mx-auto lg:max-w-none lg:col-span-3 order-2">
             <div className="bg-white rounded-2xl shadow-2xl p-4 sm:p-6 border border-gray-100">
               <div className="space-y-3 sm:space-y-4">
                 <div className="text-center">
