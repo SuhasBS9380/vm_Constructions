@@ -141,7 +141,7 @@ V M Constructions Website
         }
       `}</style>
       
-      <section className="relative min-h-screen overflow-hidden py-8 sm:py-12 px-4">
+      <section className="relative min-h-screen overflow-hidden py-4 sm:py-8 px-4">
       {/* Background Images with Sliding Effect */}
       <div className="absolute inset-0 z-0">
         {heroImages.map((image, index) => (
@@ -157,17 +157,17 @@ V M Constructions Website
               className="w-full h-full object-cover"
             />
             {/* Professional Shadow Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30"></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
           </div>
         ))}
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto w-full">
-        <div className="grid lg:grid-cols-12 gap-8 items-start min-h-[80vh]">
+        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-6 lg:gap-8 items-center lg:items-start min-h-[90vh] lg:min-h-[80vh]">
           {/* Left - Text and Image */}
-          <div className="lg:col-span-9 space-y-4 order-1 lg:order-1">
+          <div className="w-full lg:col-span-9 space-y-4 order-2 lg:order-1 text-center lg:text-left">
             {/* Animated Text Section */}
             <div className="text-center relative">
               {/* Animated decorative elements */}
@@ -184,8 +184,8 @@ V M Constructions Website
               </div>
 
               {/* Main heading with enhanced styling */}
-              <div className="relative">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white leading-tight font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif] tracking-tight drop-shadow-2xl">
+              <div className="relative px-4 sm:px-0">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white leading-tight font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif] tracking-tight drop-shadow-2xl">
                   <span className="inline-block animate-fade-in-up">CONSTRUCT</span>{" "}
                   <span className="inline-block animate-fade-in-up animation-delay-200">YOUR</span>{" "}
                   <span className="inline-block text-orange-400 animate-fade-in-up animation-delay-400 relative">
@@ -196,14 +196,14 @@ V M Constructions Website
                 </h1>
                 
                 {/* Decorative line under main text */}
-                <div className="flex justify-center mt-4">
-                  <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-orange-400 to-transparent animate-pulse"></div>
+                <div className="flex justify-center mt-3 sm:mt-4">
+                  <div className="w-16 sm:w-24 h-0.5 bg-gradient-to-r from-transparent via-orange-400 to-transparent animate-pulse"></div>
                 </div>
               </div>
 
               {/* Subtitle with animation */}
-              <div className="relative mt-6">
-                <p className="text-lg md:text-xl text-white/90 font-medium drop-shadow-lg animate-fade-in-up animation-delay-600">
+              <div className="relative mt-4 sm:mt-6 px-4 sm:px-0">
+                <p className="text-base sm:text-lg md:text-xl text-white/90 font-medium drop-shadow-lg animate-fade-in-up animation-delay-600">
                   <span className="relative">
                     Professional Construction Services Across Karnataka
                     {/* Animated dots after text */}
@@ -220,12 +220,12 @@ V M Constructions Website
           </div>
 
           {/* Right - Form */}
-          <div className="lg:col-span-3 order-2 lg:order-2">
-            <div className="bg-white rounded-2xl shadow-2xl p-6 border border-gray-100">
-              <div className="space-y-4">
+          <div className="w-full max-w-md mx-auto lg:max-w-none lg:col-span-3 order-1 lg:order-2">
+            <div className="bg-white rounded-2xl shadow-2xl p-4 sm:p-6 border border-gray-100">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="text-center">
-                  <h2 className="text-xl font-bold text-slate-900 mb-1 font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif]">Book FREE Appointment</h2>
-                  <p className="text-sm text-slate-600 font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif]">For Best Quality Construction At Affordable Rates</p>
+                  <h2 className="text-lg sm:text-xl font-bold text-slate-900 mb-1 font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif]">Book FREE Appointment</h2>
+                  <p className="text-xs sm:text-sm text-slate-600 font-['Inter',_'Roboto',_'Helvetica_Neue',_sans-serif]">For Best Quality Construction At Affordable Rates</p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-3">
@@ -237,14 +237,14 @@ V M Constructions Website
                       value={formData.fullName}
                       onChange={handleInputChange}
                       required
-                      className="w-full h-10 px-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm"
+                      className="w-full h-10 sm:h-11 px-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm"
                     />
                   </div>
 
-                  <div className="flex gap-1">
-                    <div className="flex items-center bg-gray-100 px-2 rounded-md border border-gray-300">
-                      <div className="w-5 h-3 bg-gradient-to-b from-orange-500 via-white to-green-600 rounded-sm border border-gray-400"></div>
-                      <span className="ml-1 text-sm">+91</span>
+                  <div className="flex gap-2">
+                    <div className="flex items-center bg-gray-100 px-2 rounded-md border border-gray-300 min-w-[60px]">
+                      <div className="w-4 h-3 bg-gradient-to-b from-orange-500 via-white to-green-600 rounded-sm border border-gray-400"></div>
+                      <span className="ml-1 text-xs sm:text-sm">+91</span>
                     </div>
                     <Input
                       type="tel"
@@ -253,7 +253,7 @@ V M Constructions Website
                       value={formData.mobile}
                       onChange={handleInputChange}
                       required
-                      className="flex-1 h-10 px-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm"
+                      className="flex-1 h-10 sm:h-11 px-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm"
                     />
                   </div>
 
@@ -265,18 +265,18 @@ V M Constructions Website
                       value={formData.location}
                       onChange={handleInputChange}
                       required
-                      className="w-full h-10 px-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm"
+                      className="w-full h-10 sm:h-11 px-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm"
                     />
                   </div>
 
                   <Button
                     type="submit"
-                    className="w-full h-10 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md transition-colors text-sm"
+                    className="w-full h-11 sm:h-12 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-md transition-colors text-sm sm:text-base mt-4"
                   >
                     Start Your Construction
                   </Button>
 
-                  <p className="text-xs text-gray-500 text-center leading-tight">
+                  <p className="text-xs text-gray-500 text-center leading-tight px-2">
                     By submitting this form, I confirm that I have read and agreed to accept{" "}
                     <span className="text-orange-500 underline cursor-pointer">privacy policy</span>
                   </p>
